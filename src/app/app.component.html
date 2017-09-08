@@ -1,0 +1,7 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<button type="button" name="button" (click)="button()">button</button>
+<sc-slide-list (slide) = "slide($event)"   [interval]='"2500"'>
+    <ng-template slideItem *ngFor="let item of list">
+      <span>{{item}}</span>
+    </ng-template>
+</sc-slide-list>
